@@ -31,6 +31,10 @@ p a {
     width: 90%;
     margin: 15px auto;
 }
+.mejs__time-total {
+    background-color: coral;
+ }
+
 
 @media (min-width: 769px) {
     .wrapper__video,
