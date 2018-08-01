@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+video {
+    width: 100%;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2em;
+
+}
+
+p a {
+    color: coral;
+}
+
+.highlighted {
+    color: coral;
+    font-weight: bolder;
+}
+
+.wrapper__video {
+    width: 100%;
+}
+
+.wrapper__text {
+    width: 90%;
+    margin: 15px auto;
+}
+
+@media (min-width: 769px) {
+    .wrapper__video,
+    .wrapper__text {
+        max-width: 725px;
+        margin: 0 auto;
+    }
+    .wrapper__video {
+        margin-top: 30px;
+    }
+}
+
+/* Transcript style */
+.mejs-timedtranscript {
+    width: 610px;
+    height: 8em;
+    font: .98em/1.7 sans-serif;
+    background: #f0f0f0;
+    color: #555;
+    overflow-y: scroll;
+    padding: 4px 12px;
+    border: 1px solid #ccc;
+}
+.mejs-timedtranscript, .mejs-container {
+    border-radius: 3px;
+}
+.mejs-timedtranscript input {
+    font-size: .92em;
+    padding: 0 6px;
+}
+.mejs-timedtranscript span {
+    x-outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.mejs-timedtranscript [role=button]:hover,
+.mejs-timedtranscript [role=button]:focus {
+    outline: 2px dotted rgb(44,124,145);
+    background: #fdfdfd;
+    color: #111;
+    cursor: pointer;
+}
+.mejs-timedtranscript .hi, .mejs-timedtranscript .hi:focus {
+    outline: 2px solid rgb(78,183,212) /*darkorange*/;
+    background: #fdfdfd;
+    color: #111;
+}
+/*rgba(44,124,145,0.8), rgba(78,183,212,0.8)*/
+
+.side-by .mejs-container, .side-by .mejs-timedtranscript {
+    display: inline-block;
+}
+.side-by .mejs-timedtranscript {
+    height: 352px;
+    width: 18em;
+}
+
+
+::-webkit-input-placeholder {
+    color: #777;
+}
+
+
+/* Increase contrast `?trace=1`.
+*/
+.x-trace .desc {
+    display: none;
+}
+.x-trace .mejs-timedtranscript {
+    background: #fff;
+    color: #000;
+    border: 2px solid #555;
+    height: 350px;
+}
+.x-trace .mejs-timedtranscript .hi {
+    outline: 2px solid #666;
+    background: #e8e8e8;
+}
+.x-trace input {
+    border-color: #777;
+    padding: 3px 6px;
+}
+.x-trace ::-webkit-input-placeholder {
+    color: #444;
+}
