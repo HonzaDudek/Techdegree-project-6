@@ -6,16 +6,11 @@ video {
     width: 100%;
 }
 
-p {
-    font-family: 'Lato', sans-serif;
+p span {
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     line-height: 2em;
-
-}
-
-p a {
-    color: coral;
 }
 
 .highlighted {
@@ -31,8 +26,12 @@ p a {
     width: 90%;
     margin: 15px auto;
 }
+
+.mejs__controls {
+    background-color: coral !important;
+}
 .mejs__time-total {
-    background-color: coral;
+    background-color: darkgreen;
  }
 
 
