@@ -29,7 +29,7 @@ let currentTime = vid.currentTime;
 
         // If current time is in range between captionStart and captionEnd "highlighted" class is added to caption, else,
         // "highlighted" is removed.
-        if (currentTime >= captionStart && currentTime <= captionEnd) {
+        if (currentTime >= captionStart && currentTime < captionEnd) {
             currentCaption.classList.add("highlighted");
         }
         else {
